@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "test": "test-eba80",
+    "default": "test-eba80"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
