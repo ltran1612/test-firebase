@@ -23,9 +23,9 @@ function useUserSession(initialUser) {
 					const serviceWorkerUrl = `/auth-service-worker.js?firebaseConfig=${serializedFirebaseConfig}`
 				
 				console.log("register service worker");
-			  	// navigator.serviceWorker
-				// 	.register(serviceWorkerUrl)
-				// 	.then((registration) => console.log("scope is: ", registration.scope));
+			  	navigator.serviceWorker
+					.register(serviceWorkerUrl)
+					.then((registration) => console.log("scope is: ", registration.scope));
 			}
 	  }, []);
 
