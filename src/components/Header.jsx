@@ -21,8 +21,9 @@ function useUserSession(initialUser) {
 			if ("serviceWorker" in navigator) {
 					const serializedFirebaseConfig = encodeURIComponent(JSON.stringify(firebaseConfig));
 					const serviceWorkerUrl = `/auth-service-worker.js?firebaseConfig=${serializedFirebaseConfig}`
-			
-			  navigator.serviceWorker
+				
+				console.log("register service worker");
+			  	navigator.serviceWorker
 					.register(serviceWorkerUrl)
 					.then((registration) => console.log("scope is: ", registration.scope));
 			}
